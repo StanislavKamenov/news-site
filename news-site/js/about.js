@@ -21,19 +21,18 @@ function toggleMenu() {
 }
 
 
-// Функция за вземане на текущото време и вмъкване в HTML
+
 function getCurrentTime() {
     var currentTimeElement = document.getElementById('current-time');
     var currentTime = new Date().toLocaleTimeString();
     currentTimeElement.textContent = currentTime;
 }
 
-// Обновяване на времето на всяка секунда
+да
 setInterval(getCurrentTime, 1000);
 
-// Функция за извличане на метеорологичната информация от API
 function getWeather() {
-    var apiKey = 'e10aedd98054106ad891f59a2297b533'; // Поставете вашият API ключ тук
+    var apiKey = 'e10aedd98054106ad891f59a2297b533'; 
     var city = document.getElementById('city-input').value;
     var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey + '&units=metric';
 

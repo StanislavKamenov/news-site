@@ -166,7 +166,7 @@ header {
     background-color: #45a049; 
 }
 
-/* Стилове за контейнера на новините */
+
 #news-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 

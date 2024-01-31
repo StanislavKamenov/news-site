@@ -1,4 +1,4 @@
-const apiKey = 'e6c55a7bc1bd45f9afa61d153cc56c43'; // Replace 'your_api_key' with your actual API key
+const apiKey = 'e6c55a7bc1bd45f9afa61d153cc56c43'; 
 
 async function getNews(category) {
     const url = `https://newsapi.org/v2/top-headlines?category=${category}&language=en&apiKey=${apiKey}`;

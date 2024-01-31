@@ -20,7 +20,7 @@ header {
 }
 
 
-/* Останалите стилове */
+
 .general-menu.active {
     display: flex;
     flex-direction: column;
