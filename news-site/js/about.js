@@ -54,3 +54,20 @@ function getWeather() {
 }
 
 
+// const aboutText = "Hello, this is the most current and new news in the world"
+
+// let currentIndex = 0;
+
+// const introTextElement = document.getElementById('general-welcome');
+
+// function addTextWithDelay() {
+//     introTextElement.textContent += aboutText[currentIndex];
+//     currentIndex++;
+
+//     if (currentIndex < aboutText.length) {
+//         setTimeout(addTextWithDelay, 110); 
+//     }
+// }
+
+// setTimeout(addTextWithDelay, 1000); 
+

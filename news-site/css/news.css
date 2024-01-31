@@ -20,7 +20,7 @@ header {
 }
 
 
-/* Останалите стилове */
+
 .general-menu.active {
     display: flex;
     flex-direction: column;
@@ -86,7 +86,6 @@ header {
 
 /* news */
 
-/* Стилове за прозореца */
 .modal {
     display: none;
     position: fixed;
@@ -94,7 +93,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Заден фон на прозореца */
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1;
 }
 
@@ -103,12 +102,12 @@ header {
     margin: 10% auto;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Сянка на прозореца */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
     max-width: 600px;
-    overflow-y: auto; /* Позволява прозорецът да се превърне в скролируем при достигане на максимална височина */
+    overflow-y: auto; 
 }
 
-/* Стилове за бутоните с категории */
+
 .categories {
     text-align: center;
     background: var(--second--color)
@@ -129,7 +128,7 @@ header {
     background-color: #45a049;
 }
 
-/* Стилове за новините */
+
 .news-item {
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -144,19 +143,19 @@ header {
 
 .news-item h2 {
     margin-bottom: 10px;
-    font-size: 1.5rem; /* Големина на заглавията на новините */
+    font-size: 1.5rem; 
 }
 
 .news-item p {
-    font-size: 1rem; /* Големина на текста на новините */
+    font-size: 1rem; 
 }
 
 .news-item button {
     padding: 10px 20px;
-    font-size: 1rem; /* Големина на бутона за прочитане на повече */
+    font-size: 1rem; 
     border: none;
     border-radius: 4px;
-    background-color: #4CAF50; /* Цвят на бутона */
+    background-color: #4CAF50;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -164,55 +163,60 @@ header {
 }
 
 .news-item button:hover {
-    background-color: #45a049; /* Цвят на бутона при хоувър */
+    background-color: #45a049; 
 }
 
 /* Стилове за контейнера на новините */
 #news-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Показване на две колони */
-    gap: 10px; /* Разстояние между новините */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
     background: var(--main--color);
 }
 
-/* Стилове за отделните новини */
+
 .news-item {
     padding: 20px;
     border-radius: 15px;
-    background-color: #f0f0f0; /* Цвят на фона на новините */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Сянка на новините */
-    transition: 1s;
+    background-color: #f8f9fa; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
 }
 
 .news-item:hover {
-    transform: translateY(-10px); /* Леко издигане при хоувър */
-    transition: 1s
+    transform: scale(1.03); 
 }
 
-/* Стилове за контейнера на новините */
-#news-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Гъвкаво разпределение на колоните */
-    gap: 20px; /* Разстояние между новините */
+
+
+@media only screen and (min-width: 280px) {
+    #news-container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
 }
 
-/* Стилове за контейнера на новините при по-големи екрани */
+@media only screen and (min-width: 375px) {
+    #news-container {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+
 @media only screen and (min-width: 768px) {
     #news-container {
-        grid-template-columns: repeat(2, 1fr); /* За устройства с ширина над 768px - две колони */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* Стилове за контейнера на новините при още по-големи екрани */
+
 @media only screen and (min-width: 992px) {
     #news-container {
-        grid-template-columns: repeat(3, 1fr); /* За устройства с ширина над 992px - три колони */
+        grid-template-columns: repeat(3, 1fr); 
     }
 }
 
-/* Стилове за контейнера на новините при още по-големи екрани */
+
 @media only screen and (min-width: 1200px) {
     #news-container {
-        grid-template-columns: repeat(4, 1fr); /* За устройства с ширина над 1200px - четири колони */
+        grid-template-columns: repeat(4, 1fr); 
     }
 }
