@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c056f03510.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+        <div class="general-menu">
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="carrers.html">IT</a>
+            <a href="credits.html">Carrers</a>
+            <a href="team.html">Team</a>
+        </div>
+    </header>
+
+   
+    <section class="weather-section">
+        <div class="content">
+            <div class="location-form">
+                <input type="text" id="city-input" placeholder="Check city weather">
+                <button onclick="getWeather()">Get Weather</button>
+            </div>
+            <div class="weather-info">
+                <p id="weather-info"></p>
+            </div>
+        </div>
+    </section>
+
+   
+
+   <script src="../js/about.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</body>
+</html>
