@@ -13,8 +13,6 @@ And so on
 
 HTML, CSS, JAVASCRIPT
 
-Soon Added more images
-
 ![image](https://github.com/StanislavKamenov/news-site/assets/76092821/f4e0d629-99fd-4c0c-a6c7-e43da63abd4f)
 
 ![image](https://github.com/StanislavKamenov/news-site/assets/76092821/b568c1d1-0704-4398-8ed7-9f1397f52751)
